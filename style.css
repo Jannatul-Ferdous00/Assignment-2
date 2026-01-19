@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-*{
-    /* width: 100%;
-    max-width: 1600px;
-    max-width: 0 auto; */
-    /* background: var(--#1A0B2E, rgba(26, 11, 46, 1));
-    /* padding: 0; */
-    /* background-color: rgba(26, 11, 46, 1); */
-}
 .inter-font {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -35,32 +27,29 @@
    background: linear-gradient(to right, yellow,#FB09B4,#FB09B4);
     padding: 12px 16px;
     border-radius: 10000px;
+    display: inline-flex;
     border: none;
     font-weight: 600;
     font-size: 1rem;
     color: #FFFFFF;
     margin: 10px;
-    /* margin-top: 10px; */
-    /* margin-bottom: 10px; */
-    
+    gap: 4px;
 }
 /* navbar related style */
 header{
     max-width: 1600px;
     margin: 0 auto;
+    background-color: rgba(26, 11, 46, 1);
 }
 .navbar{
     background-color: rgba(26, 11, 46, 1);
     width: 75%;
     max-width: 1200px;
-    /* padding: 16px 200px 16px 200px; */
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     justify-content: space-between;
     align-items: center;
-    /* gap: 200px; */
 }
-
 .nav-link{
     text-decoration: none;
     font-weight: 200;
@@ -75,13 +64,89 @@ header{
     text-align: center;
 }
 /* Banner */
-
+.banner-section{
+    background-image: url("./assets/hero-bg.png");
+    background-position: center;
+    max-width: 1600px;
+    height: 550px;
+    margin: 0 auto;
+    padding: 101px 0px;
+    padding-bottom: 120px;
+    /* border: 1px solid red; */
+    /* padding-bottom: 130px; */
+}
+.banner-circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* border: 1px solid white; */
+}
+.micro{
+    position:absolute;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+}
+.badge{
+    position: absolute; 
+    /* left: 5%;
+    right: 5%; */
+    padding: 8px 16px;
+    border-radius: 1000px;
+    margin-top: -300px;
+    margin-right: -200px;
+    background-color: #00FF88;
+    box-shadow: 0px 3px 27px 0px rgba(0, 255, 136, 0.5);
+    border: none;
+    font-weight: 600;
+    font-size: 1.12rem;
+}
+.banner-title{
+     display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 3rem;
+    /* gap: 2px; */
+    /* padding-top: 40px; */
+    /* padding-top: 40px; */
+}
+.banner-name{
+    display: flex;
+    justify-content: center;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 1rem;
+    margin-top: -80px;
+}
+.banner-btn{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 110px;
+}
+.start{
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    padding: 12px 20px;
+    /* justify-content: center; */
+}
+.see{
+    background: rgba(26, 11, 46, 1);
+    border:1px solid #00FF88;
+    padding: 12px 20px;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #00FF88;
+}
 /* shared About the podcast style */
 .podcast-section{
     background-color: rgba(26, 11, 46, 1);
     max-width: 1600px;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 0px;
     padding-top: 50px;
     padding-bottom: 200px;
     /* border: 1px solid red; */
@@ -145,6 +210,8 @@ header{
     margin-bottom: 30px;
     display: flex;
     justify-content: center;
+    font-weight: 600;
+    font-size: 2rem;
 }
 .techwave-container{
     /* border: 1px solid red; */
@@ -175,11 +242,19 @@ header{
 .card-5 {
   grid-column: span 1;
 }
+.heading{
+    color: #FFFFFF;
+    /* text-align: left; */
+    align-items: flex-start;
+}
+.card p{
+    font-weight: 200px;
+    font-size: 1rem;
+}
 .card {
   background:rgba(53, 17, 101, 0.4);;
   border-radius: 16px;
-  padding: 32px;
-  /* margin-bottom: 120px; */
+  padding: 40px 40px;
   color: #fff;
 }
 
@@ -188,25 +263,36 @@ header{
    max-width: 1600px;
    margin: 0 auto;
     background: rgba(26, 11, 46, 1);
-   padding-top: 120px;
-   padding-bottom: 120px;
+   padding: 48px 40px;
 }
 .featured-title{
+    display: flex;
     justify-content: center;
+    /* padding-top: 120px; */
+    /* padding-bottom: 40px; */
+    font-weight: 600;
+    font-size: 2.5rem;
 }
 .featured-container{
     /* border: 1px solid red; */
-    background: rgba(37, 13, 68, 1);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    background: rgba(26, 11, 46, 1);
+    display: flex;
+    justify-content: center;
     width: 75%;
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
     border-radius: 24px;
 }
-.video-card{
-    gap: 30px;
+.video-if{
+    border-radius: 25px;
+}
+.vido-card{
+    background: rgba(37, 13, 68, 1);
+    height: 440px;
+    width: 690px;
+    padding-bottom: 24px;
+    border-radius: 25px;
 }
 h3{
     color: #00FF88;
@@ -219,9 +305,24 @@ h3{
 .meet-h1{
     display: flex;
     justify-content: center;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-size: 2.8rem;
 }
 .alex-image{
-    margin-left: 40px;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    /* margin-top: ; */
+    /* margin: 40px 0px; */
+}
+.alex-para{
+    font-weight: 200;
+    font-size: 1rem;
+}
+.social{
+   margin-right: 8px;
 }
 .container-alex{
     justify-content: space-between;
@@ -237,7 +338,8 @@ h3{
     max-width: 1600px;
     margin: 0 auto;
     background-color:rgba(53, 17, 101, 0.4) ;
-    background-image: url("assets/hero-bg.png ");
+    background-position: center;
+    background-image: url("assets/footer-bg.png ");
     /* filter: grayscale(100%); */
     padding-top: 120px;
     padding-bottom: 160px;
@@ -250,14 +352,18 @@ h3{
 .footer-title{
     display: flex;
     justify-content: center;
+    font-weight: 900;
+    font-size: 3rem;
 }
 .footer-img{
     display: flex;
     justify-content: center;
+    /* display: inline-flex; */
     color: #FFFFFF;
-    gap: 32px;
+    gap: 40px;
     font-weight: 200;
     font-size: 1rem;
+    margin-top: -70px;
 }
 .footer-year{
     display: flex;
