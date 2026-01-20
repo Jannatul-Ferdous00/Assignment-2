@@ -6,6 +6,9 @@
   font-weight: 400;
   font-style: normal;
 }
+*{
+    
+}
 /* Share style */
 .display-flex{
     display: flex;
@@ -106,7 +109,7 @@ header{
      display: flex;
     justify-content: center;
     color: #FFFFFF;
-    font-weight: 900;
+    font-weight: 800;
     font-size: 3rem;
     /* gap: 2px; */
     /* padding-top: 40px; */
@@ -124,19 +127,19 @@ header{
     display: flex;
     justify-content: center;
     padding-bottom: 110px;
+    /* gap: 100px; */
 }
 .start{
     display: inline-flex;
-    gap: 8px;
     align-items: center;
-    padding: 12px 20px;
+    /* padding: 12px 20px; */
     /* justify-content: center; */
 }
 .see{
     background: rgba(26, 11, 46, 1);
     border:1px solid #00FF88;
     padding: 12px 20px;
-    gap: 8px;
+    /* gap: 8px; */
     font-weight: 600;
     font-size: 1rem;
     color: #00FF88;
@@ -179,6 +182,10 @@ header{
     font-weight: 400;
     font-size: 1rem;
     color: #FFFFFF;
+}
+.podcast-heading{
+    font-size: 3rem;
+    font-weight: 700;
 }
 .podcast-container{
   display: grid;
@@ -293,20 +300,17 @@ header{
     padding-bottom: 24px;
     border-radius: 25px;
 }
-h3{
-    color: #00FF88;
-     margin: 24px 24px;
-    display: inline-flex;
-    gap: 8px;
-}
 .featured-name{
     /* border: 1px solid red; */
     margin: 24px 24px; 
     color: #FFFFFF;
 }
 .heading-space{
+    color: #00FF88;
+    display: flex;
     align-items: center;
-    gap: 6px;
+    padding-left: 20px;
+    gap: 8px;
 }
 .featured-text{
     font-weight: 200;
@@ -314,11 +318,12 @@ h3{
     color: #fff;
     padding: 0px 20px;
 }
-.meet-h1{
+.meet{
+    padding-top: 120px;
     display: flex;
     justify-content: center;
-    font-weight: 700;
-    font-size: 2.8rem;
+    font-weight: 600;
+    font-size: 2.2rem;
 }
 .alex-image{
     padding: 20px 50px;
@@ -331,7 +336,18 @@ h3{
     font-size: 1rem;
 }
 .social{
-   margin-right: 8px;
+   display: flex;
+   gap: 10px;
+}
+.social-media{
+    box-sizing: border-box;
+    border: 1px solid rgba(83, 60, 114, 1);
+    padding: 6px 8px;
+    border-radius: 1000px;
+}
+.social-img{
+    max-width: 20px;
+    height: 20px;
 }
 .container-alex{
     /* border: 1px solid red; */
@@ -362,18 +378,19 @@ h3{
     justify-content: center;
     font-weight: 900;
     font-size: 3rem;
-    /* padding-bottom: 120px; */
+}
+.footer-text{
+    padding-bottom: 40px;
 }
 .footer-img{
     display: flex;
     justify-content: center;
-    /* display: inline-flex; */
+    align-items: center;
     color: #FFFFFF;
     gap: 40px;
     font-weight: 200;
     font-size: 1rem;
     margin-top: -70px;
-     /* padding-bottom: 40px; */
 }
 .footer-year{
     display: flex;
@@ -383,11 +400,12 @@ h3{
    font-size: 1rem;
 }
 .footer-social{
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     gap: 10px;
 }
 @media screen and (max-width:576px){
-    .navbar,.nav-links{
+    .navbar{
         flex-direction: column;
     }
 }
